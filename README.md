@@ -28,7 +28,7 @@ The workflow I follow for making changes to the application:
 5. If the changes on the live test site are satisfactory, merge the **test** branch into the **main** branch.
 6. Another GitHub Actions workflow is triggered, deploying the changes to the production environment.
    - The production environment is hosted on Azure Static Web Apps, specifically on the app named **stapp-frontend-adventure-prod-centralus-01**.
-   - The live website can be accessed at: [https://lemon-mushroom-0f66cb310.3.azurestaticapps.net](https://lemon-mushroom-0f66cb310.3.azurestaticapps.net)
+   - The live website can be accessed at: [https://www.devopswithdavid.com/](https://www.devopswithdavid.com/)
 
 **Note:** The deployment with GitHub Actions relies on a deployment token stored as a repository secret.
 
