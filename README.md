@@ -6,12 +6,49 @@ Welcome to my DevOps Adventure! This React-based front-end application serves as
 
 - [Vite](https://vitejs.dev/) for a fast and efficient development experience.
 - [React](https://reactjs.org/) for a modern and responsive user interface.
-- [SWC](https://swc.rs/) for a fast and low-level JavaScript optimization.
-- [Docker](https://www.docker.com/) for containerization and easy deployment to Azure App Service.
+- [SWC](https://swc.rs/) for fast and low-level JavaScript optimization.
+- [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) for hosting the application in both test and production environments.
+- [GitHub Actions](https://docs.github.com/en/actions) for continuous integration and deployment to the test and prod environments.
 
-### Front-End App
+## Application Workflow
 
-The front-end app, built with React and JavaScript, delivers a modern, responsive design and seamless user experience by dynamically feeding content from MongoDB on Azure Cosmos DB via the back-end API built with Java and SpringBoot.
+The repository consists of two branches:
+
+- **main**: This branch serves as the production-ready front end.
+- **test**: This branch is used as the development/test/staging environment.
+
+The workflow I follow for making changes to the application:
+
+1. Create a new branch for the feature or fix.
+2. Make the necessary changes locally and test them.
+3. Once satisfied with the results, push the changes to the **test** branch.
+4. A GitHub Actions workflow is triggered, deploying the changes to the test environment.
+   - The test environment is hosted on Azure Static Web Apps, specifically on the app named **stapp-frontend-adventure-test-centralus-01**.
+   - The live test site can be accessed at: [https://brave-bay-07994b310.3.azurestaticapps.net](https://brave-bay-07994b310.3.azurestaticapps.net)
+5. If the changes on the live test site are satisfactory, merge the **test** branch into the **main** branch.
+6. Another GitHub Actions workflow is triggered, deploying the changes to the production environment.
+   - The production environment is hosted on Azure Static Web Apps, specifically on the app named **stapp-frontend-adventure-prod-centralus-01**.
+   - The live website can be accessed at: [https://lemon-mushroom-0f66cb310.3.azurestaticapps.net](https://lemon-mushroom-0f66cb310.3.azurestaticapps.net)
+
+**Note:** The deployment with GitHub Actions relies on a deployment token stored as a repository secret.
+
+## Future Enhancements
+
+- Purchase a domain name for the production site and integrate it.
+- Explore containerization options, such as Docker, and deploy the application to Azure App Service.
+
+## Running the Application Locally
+
+To run the application locally, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open a terminal or command prompt and navigate to the project's root directory.
+3. Run the following commands:
+   - `npm install` to install the dependencies.
+   - `npm run dev` to start the development server.
+4. Open your web browser and visit [http://localhost:5173](http://localhost:5173) to access the application.
+
+Enjoy exploring my DevOps Adventure!
 
 ## About Me
 
