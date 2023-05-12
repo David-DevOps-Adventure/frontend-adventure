@@ -6,12 +6,10 @@ import Footer from "./components/footer/footer";
 
 function App() {
   return (
-    <div className="d-flex flex-column min-vh-100">
-      <Container fluid="lg" className="App">
-        <Navigation />
+    <div className="container-fluid">
+      <Navigation />
 
-        <Footer />
-      </Container>
+      <Footer />
     </div>
   );
 }

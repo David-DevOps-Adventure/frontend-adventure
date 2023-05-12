@@ -4,8 +4,8 @@ import Brand from "../brand/brand";
 import hamburger from "../../assets/icons/navigation/hamburger-icon.gif";
 
 const Navigation = () => (
-  <div className="navigation">
-    <div class="row align-items-start">
+  <div className="navigation text-center">
+    <div class="row justify-content-between">
       <div class="col">
         {/* hamburger button for mobile menu */}
         <button
@@ -44,10 +44,8 @@ const Navigation = () => (
         </div>
       </div>
       {/* large menu */}
-      <div className="col d-none d-lg-block navigation-menu-lg">
-        {/* <p>nav items go here</p> */}
-      </div>
-      <div class="col-2 navigation-contact">
+      <div className="col d-none d-lg-block navigation-menu-lg">hello</div>
+      <div class="col-4 navigation-contact">
         <Button variant="primary">Contact</Button>
       </div>
     </div>
