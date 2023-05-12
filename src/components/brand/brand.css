@@ -1,15 +1,9 @@
-.brand-image,
-.brand-name {
-  display: inline-block !important;
-}
-
 .brand-image {
   width: 15.9rem;
   margin-top: 0.2rem;
 }
 
 .brand-name {
-  margin-right: 0.6rem;
   margin-left: 0.6rem;
   margin-top: 0.6rem;
 }

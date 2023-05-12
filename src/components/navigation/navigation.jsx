@@ -1,55 +1,76 @@
+import React, { useState } from "react";
 import "./navigation.css";
-import { Button } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import Brand from "../brand/brand";
-import hamburger from "../../assets/icons/navigation/hamburger-icon.gif";
 
-const Navigation = () => (
-  <div className="navigation text-center">
-    <div class="row justify-content-between">
-      <div class="col">
-        {/* hamburger button for mobile menu */}
-        <button
-          className="btn  d-lg-none hamburger-btn"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-controls="offcanvasResponsive"
-        >
-          <img className="hamburger btn-outline" src={hamburger} />
-        </button>
-        <Brand />
-      </div>
-      {/* offcanvas mobile menu */}
-      <div
-        class="offcanvas-lg offcanvas-start"
-        tabindex="-1"
-        id="offcanvasResponsive"
-        aria-labelledby="offcanvasResponsiveLabel"
-        style={{ width: "350px" }}
+const Navigation = () => {
+  const [expanded, setExpanded] = useState(false);
+  const [activeSection, setActiveSection] = useState("About");
+
+  const handleToggle = () => {
+    setExpanded(!expanded);
+  };
+
+  const handleLinkClick = (section) => {
+    setActiveSection(section);
+    setExpanded(false);
+  };
+
+  return (
+    <div className="navigation-bar">
+      <Navbar
+        sticky="top"
+        expand="lg"
+        expanded={expanded}
+        onToggle={handleToggle}
       >
-        <div class="offcanvas-header">
-          <div class="offcanvas-title" id="offcanvasResponsiveLabel">
+        <Container>
+          <Navbar.Brand>
             <Brand />
-          </div>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            data-bs-target="#offcanvasResponsive"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          {/* <p class="mb-0">mobile menu goes here</p> */}
-        </div>
-      </div>
-      {/* large menu */}
-      <div className="col d-none d-lg-block navigation-menu-lg">hello</div>
-      <div class="col-4 navigation-contact text-center">
-        <Button variant="primary">Contact</Button>
-      </div>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+          <Navbar.Collapse className="mobile-nav">
+            <Nav className="ms-auto text-center">
+              <Nav.Link
+                className={`link ${activeSection === "About" ? "active" : ""}`}
+                href="#About"
+                onClick={() => handleLinkClick("About")}
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                className={`link ${
+                  activeSection === "Experience" ? "active" : ""
+                }`}
+                href="#Experience"
+                onClick={() => handleLinkClick("Experience")}
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                className={`link ${
+                  activeSection === "Testimonials" ? "active" : ""
+                }`}
+                href="#Testimonials"
+                onClick={() => handleLinkClick("Testimonials")}
+              >
+                Testimonials
+              </Nav.Link>
+              <Nav.Link className="">
+                <Button
+                  variant="primary"
+                  href="#Contact"
+                  onClick={handleLinkClick}
+                >
+                  Contact
+                </Button>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
-  </div>
-);
+  );
+};
 
 export default Navigation;
