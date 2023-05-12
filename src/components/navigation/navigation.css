@@ -1,0 +1,19 @@
+.navigation {
+  margin-top: 10px;
+}
+
+.navigation-menu-lg {
+  padding-top: 10px;
+}
+
+.navigation-contact {
+  padding-top: 5px;
+}
+
+.hamburger {
+  width: 30px;
+}
+
+.hamburger-btn {
+  padding-right: 2px !important;
+}
