@@ -1,3 +1,6 @@
+.App {
+}
+
 body,
 footer {
   font-family: "Century Gothic", sans-serif !important;
@@ -24,9 +27,9 @@ h6 {
 }
 
 .clickable:hover {
-  border: #141935 solid 1px;
-  border-radius: 10px;
-  padding: 2px !important;
+  border: #141935 solid 0.2rem;
+  border-radius: 0.6rem;
+  padding: 0.125rem !important;
   cursor: pointer;
 }
 
