@@ -12,3 +12,17 @@
 .hamburger {
   margin-bottom: 0.6rem;
 }
+
+@media (max-width: 360px) {
+  .brand-image {
+    width: 14.9rem;
+    margin-top: 0.2rem;
+  }
+}
+
+@media (max-width: 285px) {
+  .brand-image {
+    width: 10rem;
+    margin-top: 0.2rem;
+  }
+}
