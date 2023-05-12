@@ -45,7 +45,7 @@ const Navigation = () => (
       </div>
       {/* large menu */}
       <div className="col d-none d-lg-block navigation-menu-lg">hello</div>
-      <div class="col-4 navigation-contact">
+      <div class="col-4 navigation-contact text-center">
         <Button variant="primary">Contact</Button>
       </div>
     </div>
