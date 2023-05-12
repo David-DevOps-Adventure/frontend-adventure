@@ -1,0 +1,20 @@
+.brand-image,
+.brand-name {
+  display: inline-block !important;
+}
+
+.brand-image {
+  width: 16rem;
+  margin-top: 3px;
+}
+
+.brand-name {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.brand-image,
+.hamburger {
+  margin-bottom: 10px;
+}
