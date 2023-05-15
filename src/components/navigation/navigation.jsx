@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./navigation.css";
-import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import Brand from "../brand/brand";
-import toggleIcon from "../../assets/icons/ui/hamburger.gif";
+import toggleIconOpen from "../../assets/icons/ui/hamburger.png";
+import toggleIconClosed from "../../assets/icons/ui/hamburger-closed.gif";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
@@ -16,6 +17,8 @@ const Navigation = () => {
     setActiveSection(section);
     setExpanded(false);
   };
+
+  const toggleIcon = expanded ? toggleIconClosed : toggleIconOpen;
 
   return (
     <div className="navigation-bar">

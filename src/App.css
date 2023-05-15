@@ -1,22 +1,15 @@
 .App {
 }
 
-.light-section {
-  color: #141935;
-}
-
 .dark-section {
   background-color: #141935;
   color: whitesmoke;
 }
 
-.clickable:hover {
-  border: #141935 solid 0.2rem;
-  border-radius: 0.6rem;
-  padding: 0.125rem !important;
-  cursor: pointer;
-}
-
 .pink {
   color: #e83e8c;
+}
+
+body {
+  color: #141935;
 }
