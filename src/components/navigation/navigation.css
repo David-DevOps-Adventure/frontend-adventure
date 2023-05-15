@@ -5,5 +5,37 @@
 .link {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 0.4rem;
+  margin-top: 0.7rem;
+}
+
+.active {
+  color: #141935 !important;
+}
+
+.hamburger {
+  margin: 0px !important;
+  width: 30px;
+}
+
+.no-outline {
+  border: none !important;
+}
+
+.no-outline:focus {
+  border: none !important;
+}
+
+.contact {
+  padding-top: 2px !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    margin-top: 5px;
+  }
 }
