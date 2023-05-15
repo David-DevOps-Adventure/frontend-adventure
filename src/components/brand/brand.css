@@ -1,3 +1,31 @@
+.brand-container {
+  gap: 0;
+}
+
+.brand-text {
+  margin-top: 0.5rem;
+  padding-top: 0.2rems;
+}
+
+.brand-logo {
+  padding-right: 0rem !important;
+}
+
+@media (max-width: 360px) {
+  .brand-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 285px) {
+  .brand-text {
+    font-size: 1rem;
+  }
+}
+
+/* .brand-text {
+  margin-bottom: 0px;
+}
 .brand-image {
   width: 15.9rem;
   margin-top: 0.2rem;
@@ -13,16 +41,11 @@
   margin-bottom: 0.6rem;
 }
 
-@media (max-width: 360px) {
-  .brand-image {
-    width: 14.9rem;
-    margin-top: 0.2rem;
-  }
-}
+
 
 @media (max-width: 285px) {
   .brand-image {
     width: 10rem;
     margin-top: 0.2rem;
   }
-}
+} */

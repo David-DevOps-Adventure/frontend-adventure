@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./navigation.css";
 import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import Brand from "../brand/brand";
+import toggleIcon from "../../assets/icons/ui/hamburger.gif";
 
 const Navigation = () => {
   const [expanded, setExpanded] = useState(false);
@@ -25,10 +26,15 @@ const Navigation = () => {
         onToggle={handleToggle}
       >
         <Container>
-          <Navbar.Brand>
+          <Navbar.Brand className="navigation-brand">
             <Brand />
           </Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="no-outline"
+          >
+            <img className="hamburger" src={toggleIcon} alt="Toggle" />
+          </Navbar.Toggle>
           <Navbar.Collapse className="mobile-nav">
             <Nav className="ms-auto text-center">
               <Nav.Link
@@ -56,14 +62,14 @@ const Navigation = () => {
               >
                 Testimonials
               </Nav.Link>
-              <Nav.Link className="">
-                <Button
-                  variant="primary"
-                  href="#Contact"
-                  onClick={handleLinkClick}
-                >
-                  Contact
-                </Button>
+              <Nav.Link
+                className={`link ${
+                  activeSection === "Contact" ? "active" : ""
+                } contact`}
+                href="#Contact"
+                onClick={() => handleLinkClick("Contact")}
+              >
+                <Button variant="primary">Contact</Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
