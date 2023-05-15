@@ -1,22 +1,6 @@
 .App {
 }
 
-body,
-footer {
-  font-family: "Century Gothic", sans-serif !important;
-  font-size: 1.1rem !important;
-  color: #141935;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Century Gothic 700", sans-serif !important;
-}
-
 .light-section {
   color: #141935;
 }

@@ -1,0 +1,16 @@
+body,
+footer {
+  font-family: "Gothic A1", sans-serif !important;
+  font-size: 1.1rem !important;
+  color: #141935;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Exo", sans-serif !important;
+  color: #141935;
+}
