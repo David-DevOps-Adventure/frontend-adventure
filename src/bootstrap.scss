@@ -1,0 +1,26 @@
+$black: #262634;
+$true-black: #151527;
+$green: #00bfa6;
+$green-hover: #008e7e;
+$pink: #e83e8c;
+
+.btn-primary {
+  background-color: $green;
+  border-color: $green;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: $green-hover;
+  border-color: $green-hover;
+  color: white;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(20, 25, 53, 0.5);
+}
+
+.btn-outline {
+  padding: 0.18rem;
+}

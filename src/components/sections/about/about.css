@@ -1,0 +1,37 @@
+.about {
+  padding-top: 1rem;
+}
+
+.iam {
+  padding-right: 0.4rem;
+}
+
+.value-proposition {
+  margin-top: 1rem;
+}
+
+.bg-light {
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+
+.about-paragraph {
+  margin-top: 2px;
+  margin-bottom: 0px !important;
+}
+
+.hobbies {
+  margin-top: 1rem;
+}
+
+@media (min-width: 500px) {
+  .banner {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .banner {
+    width: 35rem;
+  }
+}

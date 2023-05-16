@@ -11,6 +11,10 @@
   padding-right: 0rem !important;
 }
 
+.iam-section {
+  padding-top: 2rem;
+}
+
 @media (max-width: 360px) {
   .brand-text {
     font-size: 1.3rem;
@@ -22,30 +26,3 @@
     font-size: 1rem;
   }
 }
-
-/* .brand-text {
-  margin-bottom: 0px;
-}
-.brand-image {
-  width: 15.9rem;
-  margin-top: 0.2rem;
-}
-
-.brand-name {
-  margin-left: 0.6rem;
-  margin-top: 0.6rem;
-}
-
-.brand-image,
-.hamburger {
-  margin-bottom: 0.6rem;
-}
-
-
-
-@media (max-width: 285px) {
-  .brand-image {
-    width: 10rem;
-    margin-top: 0.2rem;
-  }
-} */
