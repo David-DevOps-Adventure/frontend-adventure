@@ -1,0 +1,31 @@
+$black: #262634;
+$true-black: #151527;
+$green: #00bfa6;
+$pink: #e83e8c;
+
+.dark-section {
+  background-color: $black;
+  color: whitesmoke;
+}
+
+.green {
+  color: #00bfa6;
+}
+
+.pink {
+  color: #e83e8c;
+}
+
+body {
+  color: $black;
+}
+
+a {
+  color: $black !important;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
