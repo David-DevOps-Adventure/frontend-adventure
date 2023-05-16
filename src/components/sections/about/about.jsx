@@ -10,7 +10,6 @@ const statements = [
   "a Problem Solver.",
   "a Husband.",
   "an Animal Lover.",
-  "a Guitar Player.",
 ];
 
 // dynamic experience
