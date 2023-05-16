@@ -8,7 +8,9 @@ const Brand = () => (
       <img src={logo} className=" d-none d-lg-block" />
     </Col>
     <Col xs="auto">
-      <h3 className="brand-text">DevOps with David</h3>
+      <h3 className="brand-text">
+        <span>DevOps</span> with David
+      </h3>
     </Col>
   </Row>
 );
