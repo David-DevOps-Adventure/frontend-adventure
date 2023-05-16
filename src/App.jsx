@@ -14,9 +14,8 @@ function App() {
         <div>
           <About />
         </div>
-
-        <Footer />
       </Container>
+      <Footer />
     </div>
   );
 }
