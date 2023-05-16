@@ -1,7 +1,8 @@
 import "./about.css";
 import banner from "../../../assets/images/banner.png";
 import Typewriter from "typewriter-effect";
-
+import { toWords } from "number-to-words";
+// for the dynamic I'm content
 const statements = [
   "David Del Sol.",
   "a DevOps Engineer.",
@@ -11,6 +12,12 @@ const statements = [
   "an Animal Lover.",
   "a Guitar Player.",
 ];
+
+// dynamic experience
+const currentYear = new Date().getFullYear();
+const firstYearWorked = 2020;
+const yearsOfExperience = currentYear - firstYearWorked;
+const years = toWords(yearsOfExperience);
 
 const About = () => (
   <div className="about row">
@@ -34,8 +41,8 @@ const About = () => (
       <div className="bg-light container text-center">
         <p className="about-paragraph">
           I am a <span className="bold">Software Engineer</span> specialized in
-          DevSecOps, automation and cloud computing. Over the past three years,
-          I have assisted various organizations in building scalable
+          DevSecOps, automation and cloud computing. Over the past {years}{" "}
+          years, I have assisted various organizations in building scalable
           applications and infrastructure, simplifying processes and reducing
           operational costs along the way. See my{" "}
           <a className="bold">experience</a> to learn more.
