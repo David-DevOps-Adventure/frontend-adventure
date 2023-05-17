@@ -1,26 +1,63 @@
-$black: #262634;
+$black: #3f3d56;
 $true-black: #151527;
 $green: #00bfa6;
+$light-green: #00bfa630;
 $green-hover: #008e7e;
 $pink: #e83e8c;
+$gray-background: #f7f4f4;
+
+$primary: #00bfa6;
+$primary-variant: darken($primary, 10%);
+$primary-light: lighten($primary, 30%);
+$primary-dark: darken($primary, 30%);
+$primary-link-color: $primary;
+
+// Import Bootstrap SCSS
+@import "bootstrap/scss/bootstrap";
+
+// Custom primary color
+$primary: #00bfa6;
+$primary-variant: darken($primary, 10%);
+$primary-light: lighten($primary, 30%);
+$primary-dark: darken($primary, 30%);
+$primary-link-color: $primary;
+
+// Compile Bootstrap SCSS
+@import "bootstrap/scss/bootstrap";
 
 .btn-primary {
-  background-color: $green;
-  border-color: $green;
-  color: white;
+  color: white !important;
 }
 
-.btn-primary:hover {
-  background-color: $green-hover;
-  border-color: $green-hover;
-  color: white;
+// .btn-primary:hover {
+//   background-color: $green-hover;
+//   border-color: $green-hover;
+//   color: white;
+// }
+
+// .btn-primary:focus,
+// .btn-primary.focus {
+//   box-shadow: 0 0 0 0.2rem rgba(20, 25, 53, 0.5);
+// }
+
+// .btn-outline {
+//   padding: 0.18rem;
+// }
+.bg-light {
+  padding: 0.8rem !important;
+  border-radius: 10px !important;
 }
 
-.btn-primary:focus,
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(20, 25, 53, 0.5);
+p {
+  margin-bottom: 0px !important;
 }
 
-.btn-outline {
-  padding: 0.18rem;
+.accordion-button {
+  background-color: white !important;
+  color: $black !important;
+  border-color: $green !important;
+}
+
+.accordion-button:focus {
+  box-shadow: $light-green !important;
 }
