@@ -14,6 +14,12 @@ function App() {
         <div>
           <About />
         </div>
+        <div className="row">
+          <div className="col-lg">
+            <Experience />
+          </div>
+          <div className="col"></div>
+        </div>
       </Container>
       <Footer />
     </div>

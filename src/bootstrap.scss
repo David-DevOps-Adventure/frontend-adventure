@@ -3,6 +3,7 @@ $true-black: #151527;
 $green: #00bfa6;
 $green-hover: #008e7e;
 $pink: #e83e8c;
+$gray-background: #f7f4f4;
 
 .btn-primary {
   background-color: $green;
@@ -23,4 +24,8 @@ $pink: #e83e8c;
 
 .btn-outline {
   padding: 0.18rem;
+}
+.bg-light {
+  padding: 0.8rem !important;
+  border-radius: 10px !important;
 }

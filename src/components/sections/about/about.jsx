@@ -7,9 +7,11 @@ const statements = [
   "David Del Sol.",
   "a DevOps Engineer.",
   "a Full Stack Developer.",
+  "a Programming Mentor.",
   "a Problem Solver.",
   "a Husband.",
   "an Animal Lover.",
+  "a Guitar Enthusiast.",
 ];
 
 // dynamic experience
