@@ -2,14 +2,17 @@ import "./about.css";
 import banner from "../../../assets/images/banner.png";
 import Typewriter from "typewriter-effect";
 import { toWords } from "number-to-words";
+import Heading from "../../heading/heading";
 // for the dynamic I'm content
 const statements = [
   "David Del Sol.",
   "a DevOps Engineer.",
   "a Full Stack Developer.",
+  "a Programming Mentor.",
   "a Problem Solver.",
   "a Husband.",
   "an Animal Lover.",
+  "a Guitar Enthusiast.",
 ];
 
 // dynamic experience
@@ -36,7 +39,7 @@ const About = () => (
           />
         </span>
       </h4>
-      <h5 className="value-proposition">About Me</h5>
+      <Heading className="value-proposition" text={"About Me"} />
       <div className="bg-light container text-center">
         <p className="about-paragraph">
           I am a <span className="bold">Software Engineer</span> specialized in
