@@ -7,7 +7,7 @@ import BDLogo from "../../../../assets/images/company-logos/bd.jpeg";
 import "./custom.scss";
 
 const jobs = {
-  Gap: {
+  "Gap Inc.": {
     Logo: GapLogo,
     Title: "DevSecOps Engineer",
     Dates: "06/2021 - Present",
@@ -29,7 +29,7 @@ const jobs = {
       "Conducted load testing using Python and Locust on Pitch59.com, leading to a 25% improvement in website response time and providing insights for performance optimization efforts.",
     ],
   },
-  BD: {
+  "BD Medical": {
     Logo: BDLogo,
     Title: "Cloud Engineer",
     Dates: "09/2020 - 04/2021",
@@ -48,12 +48,13 @@ const Job = () => (
         <Accordion.Header>
           <div className="job-heading">
             <Row className="job-container">
-              <Col xs="auto">
+              <Col xs="auto d-none d-sm-block">
                 <img src={job.Logo} className="company-logo" alt={company} />
               </Col>
               <Col xs="auto">
-                <h2 className="job-title">{job.Title}</h2>
-                <h6 className="dates">{job.Dates}</h6>
+                <h2 className="job-title bold">{job.Title}</h2>
+                <h6>{company}</h6>
+                <p className="dates">{job.Dates}</p>
               </Col>
             </Row>
           </div>

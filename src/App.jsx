@@ -15,7 +15,7 @@ function App() {
           <About />
         </div>
         <div className="row">
-          <div className="col-lg">
+          <div className="col-lg work">
             <Experience />
           </div>
           <div className="col"></div>

@@ -6,17 +6,14 @@
   padding-right: 0.4rem;
 }
 
-.value-proposition {
-  margin-top: 1rem;
-}
-
-.about-paragraph {
-  margin-top: 2px;
-  margin-bottom: 0px !important;
-}
-
 .hobbies {
   margin-top: 1rem;
+}
+
+@media (min-width: 200px) {
+  .banner {
+    width: 9rem;
+  }
 }
 
 @media (min-width: 500px) {
