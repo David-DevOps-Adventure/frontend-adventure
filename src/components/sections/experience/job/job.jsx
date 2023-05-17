@@ -9,7 +9,7 @@ import "./custom.scss";
 const jobs = {
   "Gap Inc.": {
     Logo: GapLogo,
-    Title: "DevSecOps Engineer",
+    Title: "Full Stack DevSecOps Engineer",
     Dates: "06/2021 - Present",
     Bullets: [
       "Designed, maintained, and supported Azure Infrastructure, CI/CD pipelines, and automation scripts using Python, to streamline application deployment (Java/JavaScript), Azure cloud resource management, and workflow optimization.",
@@ -20,7 +20,7 @@ const jobs = {
   },
   Pitch59: {
     Logo: Pitch59Logo,
-    Title: "DevOps Engineer",
+    Title: "DevOps Engineer/SWE",
     Dates: "04/2021 - 06/2021",
     Bullets: [
       "Streamlined testing, deployment, and optimization processes for web applications and microservices.",
@@ -31,7 +31,7 @@ const jobs = {
   },
   "BD Medical": {
     Logo: BDLogo,
-    Title: "Cloud Engineer",
+    Title: "Cloud Technical Support Engineer",
     Dates: "09/2020 - 04/2021",
     Bullets: [
       "Leveraged Azure Cloud resources and Salesforce to provide tier 2 software technical support for medical devices, resulting in the timely resolution of customer issues and improved team efficiency.",

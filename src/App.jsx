@@ -18,7 +18,7 @@ function App() {
           <div className="col-lg work">
             <Experience />
           </div>
-          <div className="col"></div>
+          <div className="col projects"></div>
         </div>
       </Container>
       <Footer />
