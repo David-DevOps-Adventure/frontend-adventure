@@ -7,7 +7,7 @@ const InProgress = () => (
   <div className="in-progress">
     <div className="picture-div text-center py-2 d-none d-sm-block">
       <img
-        className="progress-picture"
+        className="progress-picture img-fluid"
         src={UnderConstructionLogo}
         alt="under construction"
       />
