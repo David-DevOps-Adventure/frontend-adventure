@@ -1,3 +1,8 @@
 .experience {
   margin-top: 1rem;
 }
+
+.experience img {
+  border-radius: 10%;
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+}

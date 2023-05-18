@@ -1,5 +1,5 @@
 import "./about.css";
-import banner from "../../../assets/images/banner.png";
+import banner from "../../../assets/icons/brand/banner.png";
 import Typewriter from "typewriter-effect";
 import { toWords } from "number-to-words";
 import Heading from "../../heading/heading";
@@ -39,16 +39,18 @@ const About = () => (
           />
         </span>
       </h4>
-      <Heading className="value-proposition" text={"About Me"} />
-      <div className="bg-light container text-center">
-        <p className="about-paragraph">
-          I am a <span className="bold">Software Engineer</span> specialized in
-          DevSecOps, automation and cloud computing. Over the past {years}{" "}
-          years, I have assisted various organizations in building scalable
-          applications and infrastructure, simplifying processes and reducing
-          operational costs along the way. See my{" "}
-          <a className="bold">experience</a> to learn more.
-        </p>
+      <div className="value-proposition">
+        <Heading text={"About Me"} />
+        <div className="bg-light container text-center">
+          <p className="about-paragraph">
+            I am a <span className="bold">Software Engineer</span> specialized
+            in DevSecOps, automation and cloud computing. Over the past {years}{" "}
+            years, I have assisted various organizations in building scalable
+            applications and infrastructure, simplifying processes and reducing
+            operational costs along the way. See my{" "}
+            <a className="bold">experience</a> to learn more.
+          </p>
+        </div>
       </div>
     </div>
   </div>

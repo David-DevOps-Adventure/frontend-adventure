@@ -26,4 +26,7 @@
   .banner {
     width: 35rem;
   }
+  .value-proposition {
+    padding-top: 2rem;
+  }
 }
