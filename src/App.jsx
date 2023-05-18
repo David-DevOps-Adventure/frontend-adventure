@@ -14,11 +14,8 @@ function App() {
         <div>
           <About />
         </div>
-        <div className="row">
-          <div className="col-lg work">
-            <Experience />
-          </div>
-          <div className="col projects"></div>
+        <div className="experience">
+          <Experience />
         </div>
       </Container>
       <Footer />

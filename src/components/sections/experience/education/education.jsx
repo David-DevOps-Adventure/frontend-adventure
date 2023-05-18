@@ -2,18 +2,18 @@ import React from "react";
 import "./education.css";
 import { Col } from "react-bootstrap";
 import BYUILogo from "../../../../assets/images/education-logos/byui.jpeg";
-import LinuxLogo from "../../../../assets/images/education-logos/linux.jpeg";
+import AppBrewLogo from "../../../../assets/images/education-logos/appbrew.jpeg";
 
 const institutions = {
   "Brigham Young University-ID": {
     Logo: BYUILogo,
     Degree: "Bachelor of Science in Software Engineering",
-    Graduation: "04/2022",
+    Graduation: "2018-2022",
   },
-  "The Linux Foundation": {
-    Logo: LinuxLogo,
-    Degree: "KCNA: Kubernetes and Cloud Native Certified",
-    Graduation: "09/2022",
+  "The App Brewery": {
+    Logo: AppBrewLogo,
+    Degree: "Full Stack Web Development/DevOps Bootcamp",
+    Graduation: "2020",
   },
 };
 
