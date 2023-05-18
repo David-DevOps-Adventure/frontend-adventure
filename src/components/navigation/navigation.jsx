@@ -21,7 +21,7 @@ const Navigation = () => {
   const toggleIcon = expanded ? toggleIconClosed : toggleIconOpen;
 
   return (
-    <div className="navigation-bar">
+    <div className="navigation-bar sticky-top">
       <Navbar
         sticky="top"
         expand="lg"

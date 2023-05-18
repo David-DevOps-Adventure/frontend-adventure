@@ -1,0 +1,15 @@
+.certification {
+  /* gap: 0;
+  padding: 0.3rem; */
+}
+
+.cert {
+  margin-top: 0.3rem;
+  padding-top: 0.2rems;
+  font-size: large;
+}
+
+.cert-logo {
+  padding-right: 0rem !important;
+  width: 1.5rem;
+}
