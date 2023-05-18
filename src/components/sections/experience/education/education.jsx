@@ -29,7 +29,7 @@ const Education = () => (
           <Col xs="auto">
             <h2 className="degree bold">{key}</h2>
             <h6 className="graduation-degree">{degree.Degree}</h6>
-            <p>{degree.Graduation}</p>
+            <small>{degree.Graduation}</small>
           </Col>
         </li>
       );
