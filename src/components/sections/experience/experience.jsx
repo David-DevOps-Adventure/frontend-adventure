@@ -30,7 +30,9 @@ const Experience = () => (
       <div className="col">
         <div className="pt-2 mb-1 col-lg">
           <Heading text={"Professional Certifications"} />
-          <Certification />
+          <ul>
+            <Certification />
+          </ul>
         </div>
       </div>
     </div>
