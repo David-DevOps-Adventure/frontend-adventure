@@ -5,6 +5,7 @@ import Navigation from "./components/navigation/navigation";
 import Footer from "./components/footer/footer";
 import About from "./components/sections/about/about";
 import Experience from "./components/sections/experience/experience";
+import Testimonials from "./components/sections/testimonials/testimonials";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </div>
         <div className="experience">
           <Experience />
+        </div>
+        <div className="text-center">
+          <Testimonials />
         </div>
       </Container>
       <Footer />

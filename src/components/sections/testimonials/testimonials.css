@@ -1,0 +1,42 @@
+.testimonials img {
+  border-radius: 50%;
+  width: 3rem;
+  box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+}
+
+.role {
+  margin-bottom: 1rem !important;
+}
+
+.testimonials {
+  font-size: 0.9rem !important;
+  background-color: white;
+}
+
+.testimonial-box {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 990px) {
+  .testimony {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+  }
+  .testimonial-content {
+    height: 13rem !important;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #20c997 !important;
+}
+
+.carousel-icon {
+  color: #20c997 !important;
+  background-color: white;
+}

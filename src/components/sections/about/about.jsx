@@ -23,7 +23,7 @@ const years = toWords(yearsOfExperience);
 const About = () => (
   <div className="about row">
     <div className="col-lg text-center">
-      <img src={banner} className="img-fluid banner rounded-circle" />
+      <img src={banner} className="img-fluid banner" />
     </div>
     <div className="col iam-section text-center">
       <h4>
