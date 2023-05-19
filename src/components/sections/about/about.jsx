@@ -40,14 +40,13 @@ const About = () => (
       </h4>
       <div className="value-proposition">
         <Heading text={"About Me"} />
-        <div className="bg-light container text-center">
+        <div className="bg-light container text-start">
           <p className="about-paragraph">
             I am a <span className="bold">Software Engineer</span> specialized
             in DevSecOps, automation and cloud computing. Over the past {years}{" "}
             years, I have assisted various organizations in building scalable
             applications and infrastructure, simplifying processes and reducing
-            operational costs along the way. See my{" "}
-            <a className="bold">experience</a> to learn more.
+            operational costs along the way.
           </p>
         </div>
       </div>
