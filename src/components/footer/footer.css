@@ -1,1 +1,12 @@
+.social {
+  margin-left: 1rem;
+}
 
+.social * {
+  margin-right: 0.5rem;
+}
+
+.social *:hover {
+  color: #20c997;
+  cursor: pointer;
+}

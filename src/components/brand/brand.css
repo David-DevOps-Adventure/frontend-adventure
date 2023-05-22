@@ -23,6 +23,11 @@
 
 @media (max-width: 285px) {
   .brand-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
+}
+
+.brand-name {
+  font-family: "Exo", sans-serif !important;
+  color: #3f3d56;
 }

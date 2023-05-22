@@ -16,6 +16,16 @@ const Navigation = () => {
   const handleLinkClick = (section) => {
     setActiveSection(section);
     setExpanded(false);
+
+    // Scroll to the corresponding component with the top aligned to the viewport
+    const element = document.getElementById(section);
+    const navbarHeight = document.querySelector(".navigation-bar").offsetHeight;
+    const elementPosition = element.offsetTop - navbarHeight;
+
+    window.scrollTo({
+      top: elementPosition,
+      behavior: "smooth",
+    });
   };
 
   const toggleIcon = expanded ? toggleIconClosed : toggleIconOpen;
@@ -39,10 +49,9 @@ const Navigation = () => {
             <img className="hamburger" src={toggleIcon} alt="Toggle" />
           </Navbar.Toggle>
           <Navbar.Collapse className="mobile-nav">
-            <Nav className="ms-auto text-center">
+            <Nav className="ms-auto text-center nav-links">
               <Nav.Link
                 className={`link ${activeSection === "About" ? "active" : ""}`}
-                href="#About"
                 onClick={() => handleLinkClick("About")}
               >
                 About
@@ -51,7 +60,6 @@ const Navigation = () => {
                 className={`link ${
                   activeSection === "Experience" ? "active" : ""
                 }`}
-                href="#Experience"
                 onClick={() => handleLinkClick("Experience")}
               >
                 Experience
@@ -60,7 +68,6 @@ const Navigation = () => {
                 className={`link ${
                   activeSection === "Testimonials" ? "active" : ""
                 }`}
-                href="#Testimonials"
                 onClick={() => handleLinkClick("Testimonials")}
               >
                 Testimonials
@@ -69,7 +76,6 @@ const Navigation = () => {
                 className={`link ${
                   activeSection === "Contact" ? "active" : ""
                 } contact`}
-                href="#Contact"
                 onClick={() => handleLinkClick("Contact")}
               >
                 <Button variant="primary">Contact</Button>
