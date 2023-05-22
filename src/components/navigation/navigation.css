@@ -4,7 +4,8 @@
 }
 
 .link:hover {
-  text-decoration: underline !important;
+  text-decoration: none !important;
+  color: #20c997 !important;
 }
 
 .link {
