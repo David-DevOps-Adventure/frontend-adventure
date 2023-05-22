@@ -14,7 +14,7 @@ const certifications = {
     cert_logo: KubernetesLogo,
   },
   "AZ-900: Microsoft Certified Azure Fundamentals": {
-    issued: "05/2023",
+    issued: "05/2021",
     cert_logo: MicrosoftLogo,
   },
 };
