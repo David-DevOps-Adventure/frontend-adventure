@@ -19,7 +19,8 @@ const Navigation = () => {
 
     // Scroll to the corresponding component with the top aligned to the viewport
     const element = document.getElementById(section);
-    const elementPosition = element.offsetTop;
+    const navbarHeight = document.querySelector(".navigation-bar").offsetHeight;
+    const elementPosition = element.offsetTop - navbarHeight;
 
     window.scrollTo({
       top: elementPosition,
