@@ -1,7 +1,6 @@
 import "./brand.css";
-import logo from "../../assets/icons/brand/logo-lg.gif";
+
 import { Row, Col } from "react-bootstrap";
-import Heading from "../heading/heading";
 
 const Brand = () => (
   <Row className="brand-container">
