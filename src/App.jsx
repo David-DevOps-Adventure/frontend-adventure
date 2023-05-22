@@ -12,13 +12,13 @@ function App() {
     <div className="d-flex flex-column min-vh-100">
       <Container fluid="lg" className="App">
         <Navigation />
-        <div>
+        <div id="About">
           <About />
         </div>
-        <div className="experience">
+        <div id="Experience" className="experience">
           <Experience />
         </div>
-        <div className="text-center">
+        <div id="Testimonials" className="text-center">
           <Testimonials />
         </div>
       </Container>

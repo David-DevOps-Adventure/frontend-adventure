@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navigation.css";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import { Link } from "react-scroll";
 import Brand from "../brand/brand";
 import toggleIconOpen from "../../assets/icons/ui/hamburger.png";
 import toggleIconClosed from "../../assets/icons/ui/hamburger-closed.gif";
@@ -13,9 +14,10 @@ const Navigation = () => {
     setExpanded(!expanded);
   };
 
-  const handleLinkClick = (section) => {
+  const handleLinkClick = (section, event) => {
+    event.preventDefault(); // Prevent the default link behavior
     setActiveSection(section);
-    setExpanded(false);
+    setExpanded(false); // Close the navigation menu
   };
 
   const toggleIcon = expanded ? toggleIconClosed : toggleIconOpen;
@@ -27,6 +29,7 @@ const Navigation = () => {
         expand="lg"
         expanded={expanded}
         onToggle={handleToggle}
+        collapseOnSelect // Close the navigation menu on select
       >
         <Container>
           <Navbar.Brand className="navigation-brand">
@@ -39,40 +42,72 @@ const Navigation = () => {
             <img className="hamburger" src={toggleIcon} alt="Toggle" />
           </Navbar.Toggle>
           <Navbar.Collapse className="mobile-nav">
-            <Nav className="ms-auto text-center">
+            <Nav className="ms-auto text-center nav-links">
               <Nav.Link
                 className={`link ${activeSection === "About" ? "active" : ""}`}
+                onClick={(event) => handleLinkClick("About", event)}
                 href="#About"
-                onClick={() => handleLinkClick("About")}
               >
-                About
+                <Link
+                  to="About"
+                  spy={true}
+                  smooth={true}
+                  duration={20}
+                  offset={-70}
+                >
+                  About
+                </Link>
               </Nav.Link>
               <Nav.Link
                 className={`link ${
                   activeSection === "Experience" ? "active" : ""
                 }`}
+                onClick={(event) => handleLinkClick("Experience", event)}
                 href="#Experience"
-                onClick={() => handleLinkClick("Experience")}
               >
-                Experience
+                <Link
+                  to="Experience"
+                  spy={true}
+                  smooth={true}
+                  duration={20}
+                  offset={-70}
+                >
+                  Experience
+                </Link>
               </Nav.Link>
               <Nav.Link
                 className={`link ${
                   activeSection === "Testimonials" ? "active" : ""
                 }`}
+                onClick={(event) => handleLinkClick("Testimonials", event)}
                 href="#Testimonials"
-                onClick={() => handleLinkClick("Testimonials")}
               >
-                Testimonials
+                <Link
+                  to="Testimonials"
+                  spy={true}
+                  smooth={true}
+                  duration={20}
+                  offset={-70}
+                >
+                  Testimonials
+                </Link>
               </Nav.Link>
               <Nav.Link
                 className={`link ${
                   activeSection === "Contact" ? "active" : ""
                 } contact`}
+                onClick={(event) => handleLinkClick("Contact", event)}
                 href="#Contact"
-                onClick={() => handleLinkClick("Contact")}
               >
-                <Button variant="primary">Contact</Button>
+                <Link
+                  to="Contact"
+                  spy={true}
+                  smooth={true}
+                  duration={20}
+                  offset={-70}
+                >
+                  <Button variant="primary">Contact</Button>
+                </Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
