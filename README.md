@@ -32,12 +32,20 @@ The workflow I follow for making changes to the application:
 
 **Note:** The deployment with GitHub Actions relies on a deployment token stored as a repository secret.
 
+## Image Sources
+
+The images used in this application are sourced from [LinkedIn](https://www.linkedin.com) and [unDraw](https://undraw.co/).
+
+## Icon Credits
+
+The icons used in this application are from the [react-icons](https://react-icons.github.io/react-icons/) library.
+
 ## Future Enhancements
 
-- Purchase a domain name for the production site and integrate it.
+- Incorporate azure functions for the contact me feature.
 - Explore containerization options, such as Docker, and deploy the application to Azure App Service.
 
-## Running the Application Locally
+## Running the Front End Locally
 
 To run the application locally, follow these steps:
 
