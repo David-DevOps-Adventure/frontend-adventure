@@ -24,7 +24,7 @@ The workflow I follow for making changes to the application:
 3. Once satisfied with the results, push the changes to the **test** branch.
 4. A GitHub Actions workflow is triggered, deploying the changes to the test environment.
    - The test environment is hosted on Azure Static Web Apps, specifically on the app named **stapp-frontend-adventure-test-centralus-01**.
-   - The live test site can be accessed at: [https://brave-bay-07994b310.3.azurestaticapps.net](https://brave-bay-07994b310.3.azurestaticapps.net)
+   - The live test site can be accessed at: [https://test.devopswithdavid.com/](https://test.devopswithdavid.com/)
 5. If the changes on the live test site are satisfactory, merge the **test** branch into the **main** branch.
 6. Another GitHub Actions workflow is triggered, deploying the changes to the production environment.
    - The production environment is hosted on Azure Static Web Apps, specifically on the app named **stapp-frontend-adventure-prod-centralus-01**.
