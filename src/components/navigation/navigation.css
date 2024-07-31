@@ -35,6 +35,10 @@
   padding-top: 2px !important;
 }
 
+.contact-btn:hover {
+  color: white !important;
+}
+
 .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
