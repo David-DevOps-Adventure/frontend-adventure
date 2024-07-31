@@ -78,7 +78,7 @@ const Navigation = () => {
                 } contact`}
                 onClick={() => handleLinkClick("Contact")}
               >
-                <Button variant="primary">Contact</Button>
+                <Button variant="primary" className="contact-btn">Contact</Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
